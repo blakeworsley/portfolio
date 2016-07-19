@@ -1,0 +1,262 @@
+/* General */
+
+body {
+    background: #f4f4f4;
+}
+* a {
+    text-decoration: none;
+    color: #334D5C;
+    font-size: 1.2em;
+    font-family: 'Athiti', sans-serif;
+}
+article {
+    margin: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    color: #6D6E71;
+    margin-bottom: 8px;
+}
+h1 {
+    font-size: 2em;
+    line-height: 2em;
+}
+h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+}
+h3 {
+    font-size: 2em;
+    font-style: italic;
+    line-height: 1.3em;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #FFF0BF;
+}
+h5 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+h6 {
+    font-size: 1em;
+    font-style: italic;
+}
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+/* STRUCTURE */
+
+section {
+    min-height: 101vh;
+    /* Viewport height set to 100 makes it fill the entire page*/
+    positon: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* HEADER */
+
+header {
+    height: 80px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+#logo-header {
+    width: 70px;
+    height: 70px;
+    margin: 4px 12px 12px 50px;
+    float: left;
+}
+#logo-header:hover #path-1 {
+    /*opacity: 0;*/
+}
+header li {
+    display: inline-block;
+    float: right;
+    height: 50px;
+    padding: 0px 20px 0px 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Athiti', sans-serif;
+}
+header li a:hover {
+    color: #92FFF7;
+}
+
+/* BIO */
+
+#bio {
+    height: 101vh;
+}
+#bio article {
+    padding: 5px;
+    position: relative;
+    top: 20%;
+    transform: translateY(51%);
+    max-width: 600px;
+}
+
+/* PROJECTS */
+
+#projects {
+    text-align: center;
+    min-width: 100%;
+    text-align: center;
+}
+#projects article {
+    margin: auto;
+}
+.project {
+    width: 100%;
+    height: 100%;
+}
+.project-image {
+    min-width: 100%;
+    max-height: 101vh;
+    position: absolute;
+    top: auto;
+    left: 0;
+    z-index: -1;
+}
+
+/* Timeline */
+
+#timeline {
+    height: auto;
+    text-align: center;
+}
+#timeline-header {
+    height: 90px;
+    width: 490px;
+    positon: absolute;
+    top: 150;
+    background-color: #2D4553;
+    margin: 40px auto -90px auto;
+}
+.timeline-heading-text {
+    margin: -55px auto 55px auto;
+}
+.column {
+    top: 0;
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    vertical-align: top;
+}
+.education, .work-experience {
+    text-align: left;
+    margin: 20px auto 0 auto;
+}
+.education {
+    color: #DF4949;
+    padding: 15px;
+    border-right: 1px solid #DF4949;
+    border-top: 1px solid #DF4949;
+}
+.work-experience {
+    color: #344D5C;
+    padding: 15px;
+    border-left: 1px solid #344D5C;
+    border-top: 1px solid #344D5C;
+}
+#timeline-column {
+    width: 150px;
+}
+/*.css-line {
+  width: 2px;
+  position: absolute;
+  margin: auto;
+  border-bottom: 2000px solid #344D5C;
+}*/
+.blue-year, .red-year {
+    height: 42px;
+    width: 70px;
+    border-radius: 50%;
+    display: block;
+    padding-top: 28px;
+    margin-top: 30px;
+    color: #FFF0BF;
+}
+.red-year {
+    background-color: #DF4949;
+}
+.blue-year {
+    background-color: #334D5C;
+}
+
+/* Contact */
+
+#contact {
+    max-height: 90vh;
+    background-color: #334D5C;
+    position: relative;
+    text-align: center;
+}
+#contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding-top: 100px;
+    /*border: 1px solid blue;*/
+}
+form {
+    max-width: 500px;
+    font-family: 'Lato', sans-serif;
+    top: 200px;
+}
+legend {
+    padding: 10px 0 10px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    color: white;
+}
+label {
+    display: block;
+    color: #E6E6E5;
+    font-family: 'Lato', sans-serif;
+}
+input {
+    height: 40px;
+    width: 65%;
+    background-color: #2D4553;
+    border: none;
+    margin: 15px auto 0 auto;
+    color: #92FFF7;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+input:focus {
+    background-color: #B73535;
+}
+button {
+    border: 2px solid #92FFF7;
+    background: none;
+    color: white;
+    width: 120px;
+    font-size: 1.2em;
+    padding: 5px 20px 5px 20px;
+    font-family: 'Lato', sans-serif;
+    margin: 20px auto;
+}
+button:hover {
+    border-color: #B73535;
+}
+
+/* Footer */
+
+footer {
+    background: white;
+    height: 100px;
+    text-align: center;
+}
+.footer-icons {
+    height: 50px;
+    width: 50px;
+    margin-top: 25px;
+    display: inline-block;
+}
