@@ -1,189 +1,126 @@
-/* General */
-
 body {
   background: #f4f4f4;
-}
-* a {
-  text-decoration: none;
-  color: #334D5C;
-  font-size: 1.2em;
-  font-family: 'Athiti', sans-serif;
-}
-article {
-  margin: auto;
-}
-h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   color: #6D6E71;
-  margin-bottom: 8px;
+}
+a {
+  text-decoration: none;
+  color: #334D5C;
+  font-family: 'Athiti', sans-serif;
+  font-size: 1.4em;
+}
+p {
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: 1.5em;
+}
+section {
+  min-height: 100vh;
+}
+.italic {
+  font-style: italic;
+  letter-spacing: 0.2em;
+}
+
+/* Header */
+
+.main-header {
+  height: 125px;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+}
+#logo-header {
+  margin-top: 25px;
+  margin-left: 2em;
+  width: 75px;
+  height: 75px;
+}
+nav {
+  margin-top: 25px;
+  margin-right: 2em;
+  display: inline: block;
+  float: right;
+}
+
+/* Bio Section */
+
+.bio-section {
+  margin-right: 2em;
+  margin-left: 2em;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 h1 {
   font-size: 2em;
   line-height: 2em;
 }
 h2 {
-  font-size: 2em;
-  line-height: 1.2em;
+  font-size: 1.6em;
+  line-height: 1.5em;
 }
 h3 {
-  font-size: 2em;
-  font-style: italic;
-  line-height: 1.3em;
-}
-h4 {
-  text-transform: uppercase;
-  font-size: 1.2em;
-  color: #FFF0BF;
-}
-h5 {
-  font-size: 1.2em;
-  font-weight: 500;
-}
-h6 {
-  font-size: 1em;
-  font-style: italic;
-}
-p {
-  font-family: 'Lato', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.8em;
 }
 
-/* STRUCTURE */
+/* Project List */
 
-section {
-  min-height: 101vh;
-  /* Viewport height set to 100 makes it fill the entire page*/
-  positon: relative;
-  padding-top: 75px;
-  padding-bottom: 75px;
+.projects-section {
+  background-color: white;
 }
-
-/* HEADER */
-
-header {
-  height: 80px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  position: fixed;
-  top: 0px;
-  z-index: 1000;
+.projects-header {
+  padding: 3em;
 }
-#logo-header {
-  width: 70px;
-  height: 70px;
-  margin: 4px 12px 12px 50px;
-  float: left;
+.projects-section-container {
+  padding: 2em;
 }
-#logo-header:hover #path-1 {
-  /*opacity: 0;*/
+.projects {
+  margin-top: 2em;
+  padding: 1em;
+  /*background-color: #f4f4f4;*/
 }
-header li {
-  display: inline-block;
-  float: right;
-  height: 50px;
-  padding: 0px 20px 0px 20px;
-  margin-top: 30px;
-  text-align: center;
-  font-family: 'Athiti', sans-serif;
+.project-title {
+  font-weight: 900;
 }
-header li a:hover {
-  color: #92FFF7;
-}
-
-/* BIO */
-
-#bio {
-  height: 101vh;
-}
-#bio article {
-  padding: 5px;
-  position: relative;
-  top: 20%;
-  transform: translateY(51%);
-  max-width: 600px;
-}
-
-/* PROJECTS */
-
-#projects {
-  text-align: center;
-  min-width: 100%;
-  text-align: center;
-}
-#projects article {
-  margin: auto;
-}
-.project {
-  width: 100%;
-  height: 100%;
-}
-.project-image {
-  min-width: 100%;
-  max-height: 101vh;
-  position: absolute;
-  top: auto;
-  left: 0;
-  z-index: -1;
+.project-link {
+  color: #DF4949;
+  padding-top: auto;
 }
 
 /* Timeline */
 
-#timeline {
-  height: auto;
-  text-align: center;
+.timeline-year {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: -3em;
 }
-#timeline-header {
-  height: 90px;
-  width: 490px;
-  positon: absolute;
-  top: 150;
-  background-color: #2D4553;
-  margin: 40px auto -90px auto;
+.timeline-header {
+  margin-top: 4em;
+  margin-bottom: 2em;
 }
-.timeline-heading-text {
-  margin: -55px auto 55px auto;
+.horizontal-line {
+  width: 50%;
+  height: 2px;
+  background-color: #757575;
 }
-.column {
-  top: 0;
-  display: inline-block;
-  position: relative;
-  width: 300px;
-  vertical-align: top;
-}
-.education, .work-experience {
-  text-align: left;
-  margin: 20px auto 0 auto;
-}
-.education {
-  color: #DF4949;
-  padding: 15px;
-  border-right: 1px solid #DF4949;
-  border-top: 1px solid #DF4949;
-}
-.work-experience {
-  color: #344D5C;
-  padding: 15px;
-  border-left: 1px solid #344D5C;
-  border-top: 1px solid #344D5C;
-}
-#timeline-column {
-  width: 150px;
-}
-
-/*.css-line {
-  width: 2px;
-  position: absolute;
-  margin: auto;
-  border-bottom: 2000px solid #344D5C;
-}*/
-
 .blue-year, .red-year {
-  height: 42px;
-  width: 70px;
+  height: 80px;
+  width: 100px;
   border-radius: 50%;
-  display: block;
-  padding-top: 28px;
-  margin-top: 30px;
-  color: #FFF0BF;
+  display: inline-block;
+  padding-top: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: auto;
 }
 .red-year {
   background-color: #DF4949;
@@ -191,16 +128,26 @@ header li a:hover {
 .blue-year {
   background-color: #334D5C;
 }
+.timeline-card {
+  margin: 2em 5em 2em 2em;
+  padding: 1em;
+}
+.education h2, .education h3 {
+  color: #DF4949;
+}
+.work-experience h2, .work-experience h3 {
+  color: #334D5C;
+}
 
-/* Contact */
+/* Contact form */
 
-#contact {
+.contact-section {
   max-height: 90vh;
   background-color: #334D5C;
   position: relative;
   text-align: center;
 }
-#contact-form {
+.contact-form {
   max-width: 500px;
   margin: auto;
   padding-top: 100px;
@@ -233,7 +180,7 @@ input {
   font-size: 1.2em;
 }
 input:focus {
-  background-color: #2D4553;
+  background-color: #B73535;
 }
 button {
   border: 2px solid #92FFF7;
@@ -261,4 +208,57 @@ footer {
   width: 50px;
   margin-top: 25px;
   display: inline-block;
+}
+@media (min-width: 40em) {
+  /* HEADER */
+  .main-header {
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+  }
+  header li {
+    display: inline-block;
+    float: right;
+    height: 50px;
+    padding: 0px 20px 0px 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Athiti', sans-serif;
+  }
+  header li a:hover {
+    color: #92FFF7;
+  }
+  /* BIO */
+  .bio-section article {
+    max-width: 600px;
+  }
+  /* PROJECTS */
+  .projects-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projects {
+    display: inline-block;
+    width: 200px;
+  }
+  /* Timeline */
+  .timeline-year {
+    display: block;
+    text-align: center;
+    margin-bottom: 0em;
+  }
+  .horizontal-line {
+    width: 0;
+    height: 0;
+  }
+  .timeline-card-container {
+    text-align: center;
+  }
+  .timeline-card {
+    display: inline-block;
+    max-width: 400px;
+    margin: 2em 2em 2em 2em;
+  }
 }
